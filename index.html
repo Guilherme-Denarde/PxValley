@@ -6,8 +6,22 @@
     <title>PxValley Game</title>
 </head>
 <body>
+    <style>
+        body { margin: 0; overflow: hidden; }
+        #score {
+            position: absolute;
+            left: 10px;
+            top: 10px;
+            color: #fff;
+            font-family: sans-serif;
+            background: rgba(0,0,0,0.5);
+            padding: 4px 8px;
+            border-radius: 4px;
+        }
+    </style>
     <canvas id="gameCanvas"></canvas>
-    <script src="index.js"></script>
+    <div id="score">Score: 0</div>
     <script src="data/collisions.js"></script>
+    <script src="index.js"></script>
 </body>
 </html>
